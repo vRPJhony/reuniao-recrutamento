@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { getDb } from "@/lib/mongodb";
-import { isAdmin } from "@/lib/auth";
+import { getDb } from "../../../../lib/mongodb";
+import { isAdmin } from "../../../../lib/auth";
 
 export const dynamic = "force-dynamic";
 

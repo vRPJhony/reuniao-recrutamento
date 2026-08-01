@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { getDb } from "@/lib/mongodb";
-import { defaultContent } from "@/lib/defaultContent";
+import { getDb } from "../../../lib/mongodb";
+import { defaultContent } from "../../../lib/defaultContent";
 
 export const dynamic = "force-dynamic";
 

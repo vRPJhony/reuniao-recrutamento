@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { getDb } from "@/lib/mongodb";
-import { defaultContent } from "@/lib/defaultContent";
-import { isAdmin } from "@/lib/auth";
+import { getDb } from "../../../../lib/mongodb";
+import { defaultContent } from "../../../../lib/defaultContent";
+import { isAdmin } from "../../../../lib/auth";
 
 export async function POST() {
   if (!(await isAdmin())) {

@@ -52,3 +52,9 @@ Na primeira abertura, o sistema cria:
 - A senha do painel não fica exposta no navegador.
 - A autenticação usa cookie HTTP-only assinado.
 - Todas as alterações administrativas exigem sessão autenticada.
+
+
+## Correção de importações
+
+Esta versão inclui `jsconfig.json` e também usa importações relativas nas rotas da API,
+evitando o erro `Module not found: Can't resolve '@/lib/...'` durante o build na Vercel.
