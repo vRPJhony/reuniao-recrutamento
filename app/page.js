@@ -342,7 +342,7 @@ export default function HomePage() {
           <div className="brand-mark">E</div>
           <div>
             <strong>EUFO GROUP</strong>
-            <small>Portal de recrutamento</small>
+            <small>Central de treinamento staff</small>
           </div>
         </div>
 
@@ -350,7 +350,7 @@ export default function HomePage() {
           <button className="btn" onClick={() => window.print()}>
             Imprimir
           </button>
-          <a className="btn" href="/candidaturas">Candidaturas</a>
+          <a className="btn" href="/treinamentos">Treinamentos</a>
           <button className="btn primary" onClick={() => setAdminOpen(true)}>
             Painel <span className="desktop-label">Administrativo</span>
           </button>
@@ -378,7 +378,7 @@ export default function HomePage() {
             <span className="eyebrow">{content.hero.eyebrow}</span>
             <h1>{content.hero.title}</h1>
             <p>{content.hero.description}</p>
-            <a className="eufo-cta" href="/candidatar">Enviar candidatura →</a>
+            <a className="eufo-cta" href="/treinamentos">Abrir central de treinamentos →</a>
             <div className="chips">
               {content.hero.chips.map((chip) => (
                 <span className="chip" key={chip}>
