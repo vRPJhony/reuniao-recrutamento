@@ -1,15 +1,15 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Reunião Staff Atlas",
-  description: "Reunião e recrutamento da Staff Atlas."
+  title: "Eufo Group | Recrutamento",
+  description: "Portal oficial de recrutamento do Eufo Group."
 };
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#07111f"
+  themeColor: "#0404bd"
 };
 
 export default function RootLayout({ children }) {

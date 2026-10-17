@@ -289,7 +289,7 @@ export default function HomePage() {
     const anchor = document.createElement("a");
 
     anchor.href = url;
-    anchor.download = "reuniao-staff-atlas.json";
+    anchor.download = "eufo-group-recrutamento.json";
     anchor.click();
 
     URL.revokeObjectURL(url);
@@ -339,10 +339,10 @@ export default function HomePage() {
           >
             ☰
           </button>
-          <div className="brand-mark">A</div>
+          <div className="brand-mark">E</div>
           <div>
-            <strong>ATLAS STAFF</strong>
-            <small>Reunião de recrutamento</small>
+            <strong>EUFO GROUP</strong>
+            <small>Portal de recrutamento</small>
           </div>
         </div>
 
@@ -350,6 +350,7 @@ export default function HomePage() {
           <button className="btn" onClick={() => window.print()}>
             Imprimir
           </button>
+          <a className="btn" href="/candidaturas">Candidaturas</a>
           <button className="btn primary" onClick={() => setAdminOpen(true)}>
             Painel <span className="desktop-label">Administrativo</span>
           </button>
@@ -377,6 +378,7 @@ export default function HomePage() {
             <span className="eyebrow">{content.hero.eyebrow}</span>
             <h1>{content.hero.title}</h1>
             <p>{content.hero.description}</p>
+            <a className="eufo-cta" href="/candidatar">Enviar candidatura →</a>
             <div className="chips">
               {content.hero.chips.map((chip) => (
                 <span className="chip" key={chip}>
