@@ -108,8 +108,8 @@ export default function HomePage() {
 
   function showMessage(text) {
     setMessage(text);
-    window.clearTimeout(window.__atlasToast);
-    window.__atlasToast = window.setTimeout(() => setMessage(""), 3000);
+    window.clearTimeout(window.__eufoToast);
+    window.__eufoToast = window.setTimeout(() => setMessage(""), 3000);
   }
 
   async function login(event) {
